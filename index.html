@@ -18,7 +18,7 @@
   <meta property="og:type" content="blog"/>
   <meta property="og:site_name" content="Welcome to ChanScen&#39;s Blog"/>
   <meta property="og:title" content="Welcome to ChanScen&#39;s Blog"/>
-  <meta property="og:url" content="https://chanscen.github.io/"/>
+  <meta property="og:url" content="https://ChanScen.github.io/"/>
   <meta property="og:description" content=""/>
 
   <script type="application/ld+json">
@@ -26,7 +26,7 @@
     "@context" : "http://schema.org",
     "@type" : "Blog",
     "name": "Welcome to ChanScen's Blog",
-    "url" : "https://chanscen.github.io/",
+    "url" : "https://ChanScen.github.io/",
     "description": ""
   }
   </script>
@@ -36,16 +36,16 @@
 
   <link type="text/css"
         rel="stylesheet"
-        href="https://chanscen.github.io/css/print.css"
+        href="https://ChanScen.github.io/css/print.css"
         media="print">
 
   <link type="text/css"
         rel="stylesheet"
-        href="https://chanscen.github.io/css/poole.css">
+        href="https://ChanScen.github.io/css/poole.css">
 
   <link type="text/css"
         rel="stylesheet"
-        href="https://chanscen.github.io/css/hyde.css">
+        href="https://ChanScen.github.io/css/hyde.css">
 
   
 
@@ -67,7 +67,7 @@
   <link rel="shortcut icon" href="/favicon.png">
 
   
-  <link href="https://chanscen.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Welcome to ChanScen's Blog" />
+  <link href="https://ChanScen.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Welcome to ChanScen's Blog" />
   </head>
 <body>
   <aside class="sidebar">
@@ -85,7 +85,7 @@
     <nav>
       <ul class="sidebar-nav">
         <li>
-          <a href="https://chanscen.github.io/">Home</a>
+          <a href="https://ChanScen.github.io/">Home</a>
         </li>
         
       </ul>
@@ -102,7 +102,34 @@
   <div class="posts">
   <article class="post">
       <h1 class="post-title">
-        <a href="https://chanscen.github.io/post/first/">First</a>
+        <a href="https://ChanScen.github.io/post/mysecond/">MySecond</a>
+      </h1>
+
+      <div class="post-date">
+        <time datetime="2020-02-21T17:25:46&#43;0800">Feb 21, 2020</time> · 2 min read
+      </div>
+
+      
+        资源热更新教程 前言 本篇文档基于 Cocos Creator v0.8 完成
+之所以这篇文档的标题为教程，是因为目前 Cocos Creator 资源热更新的工作流还没有彻底集成到编辑器中，不过引擎本身对于热更新的支持是完备的，所以借助一些外围脚本和一些额外的工作就可以达成。
+本篇文档的范例工程可以从 Github 仓库获取。
+使用场景和设计思路 资源热更新的使用场景相信游戏开发者都非常熟悉，对于已发布的游戏，在游戏内通过从服务器动态下载新的游戏内容，来时刻保持玩家对游戏的新鲜感，是保持一款游戏长盛不衰非常重要的手段。当然热更新还有一些其他的用途，不过在此不再深入讨论，我们下面将主要讨论 Cocos Creator 对热更新支持的原理和手段。
+Cocos Creator 中的热更新主要源于 Cocos 引擎中的 AssetsManager 模块对热更新的支持。它有个非常重要的特点：
+服务端和本地均保存完整版本的游戏资源，热更新过程中通过比较服务端和本地版本的差异来决定更新哪些内容。这样即可天然支持跨版本更新，比如本地版本为 A，远程版本是 C，则直接更新 A 和 C 之间的差异，并不需要生成 A 到 B 和 B 到 C 的更新包，依次更新。所以，在这种设计思路下，新版本的文件以离散的方式保存在服务端，更新时以文件为单位下载。
+除此之外，由于 WEB 版本可以通过服务器直接进行版本更新，所以资源热更新只适用于原生发布版本。AssetsManager 类也只在 jsb 命名空间下，在使用的时候需要注意判断运行环境。
+Manifest 文件 对于不同版本的文件级差异，AssetsManager 中使用 Manifest 文件来进行版本比对。本地和远端的 Manifest 文件分别标示了本地和远端的当前版本包含的文件列表和文件版本，这样就可以通过比对每个文件的版本来确定需要更新的文件列表。
+Manifest 文件中包含以下几个重要信息：
+ 远程资源包的根路径 远程 Manifest 文件地址 远程 Version 文件地址（非必需） 主版本号 文件列表：以文件路径来索引，包含文件版本信息，一般推荐用文件的 md5 校验码来作为版本号 搜索路径列表  其中 Version 文件内容是 Manifest 文件内容的一部分，不包含文件列表。由于 Manifest 文件可能比较大，每次检查更新的时候都完整下载的话可能影响体验，所以开发者可以额外提供一个非常小的 Version 文件。AssetsManager 会首先检查 Version 文件提供的主版本号来判断是否需要继续下载 Manifest 文件并更新。
+      
+
+      
+      <div class="read-more-link">
+        <a href="/post/mysecond/">Read More</a>
+      </div>
+      
+    </article><article class="post">
+      <h1 class="post-title">
+        <a href="https://ChanScen.github.io/post/first/">First</a>
       </h1>
 
       <div class="post-date">
