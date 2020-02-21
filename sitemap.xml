@@ -3,26 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ChanScen.github.io/post/page1/</loc>
+    <loc>https://chanscen.github.io/</loc>
+    <lastmod>2020-02-21T20:46:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chanscen.github.io/post/page3/</loc>
+    <lastmod>2020-02-21T20:46:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chanscen.github.io/post/</loc>
+    <lastmod>2020-02-21T20:46:38+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chanscen.github.io/post/page2/</loc>
+    <lastmod>2020-02-21T20:42:59+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chanscen.github.io/post/page1/</loc>
     <lastmod>2020-02-21T19:11:27+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ChanScen.github.io/post/</loc>
-    <lastmod>2020-02-21T19:11:27+08:00</lastmod>
+    <loc>https://chanscen.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>https://ChanScen.github.io/</loc>
-    <lastmod>2020-02-21T19:11:27+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ChanScen.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ChanScen.github.io/tags/</loc>
+    <loc>https://chanscen.github.io/tags/</loc>
   </url>
   
 </urlset>
