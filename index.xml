@@ -6,13 +6,22 @@
     <description>Recent content on ChanScen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 21 Feb 2020 20:46:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 20:50:57 +0800</lastBuildDate>
     
 	<atom:link href="https://chanscen.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Page3</title>
+      <title>Lua和C&#43;&#43;交互</title>
+      <link>https://chanscen.github.io/post/page4/</link>
+      <pubDate>Fri, 21 Feb 2020 20:50:57 +0800</pubDate>
+      
+      <guid>https://chanscen.github.io/post/page4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;学习笔记</title>
       <link>https://chanscen.github.io/post/page3/</link>
       <pubDate>Fri, 21 Feb 2020 20:46:38 +0800</pubDate>
       
@@ -21,7 +30,7 @@
     </item>
     
     <item>
-      <title>Page2</title>
+      <title>Java学习笔记</title>
       <link>https://chanscen.github.io/post/page2/</link>
       <pubDate>Fri, 21 Feb 2020 20:42:59 +0800</pubDate>
       
